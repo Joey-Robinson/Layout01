@@ -79,3 +79,11 @@ npm start
 ```
 
 and make a change to .scss file and the .scss will be compiled to .css. The server will reload and the default styles will be showing
+
+When you're done with any and all changes you want, this is what you need to do:
+
+```
+npm run build:css
+```
+
+This will run all the scripts that you need and minify your css in main.css. That's it. The current html files are pointing to main.css as well.
