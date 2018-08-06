@@ -1,3 +1,6 @@
+// This is for the about.html page. It's a single column layout with 4 rows. But can be changed to fit your needs
+// I added some padding to more center it without using text-align: center; as well as added a 
+// text-decoration: underline; for the h1's. 
 .about {
   background: $aboutPurpleDark;
   grid-column: 2;

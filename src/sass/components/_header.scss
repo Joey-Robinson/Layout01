@@ -1,3 +1,6 @@
+// Header Component. This is on the right side, overlaying the footer on larger screens.
+// On smaller screens, the header moves to the top and has 6 rows (7, technically). When a link
+// Is active, the 'seventh' appears and the active link is moved to its location.
 .header {
   grid-column: 3;
   grid-row: 2;
