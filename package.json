@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compress": "node-sass --output-style compressed -o dist/css src/sass"
   },
   "keywords": [],
   "author": "Joey Robinson <joeyrobinsondev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
 }
