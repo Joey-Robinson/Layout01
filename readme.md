@@ -64,3 +64,18 @@ Note: You need to make a CSS Folder with main.css if one isn't present on clonin
 After you've installed & gotten everything up and running, go wild. Add or remove pages as you see fit. Remove or add columns and rows if you need/don't need. I made this so people can have some exposure to both scss and CSS Grid.
 
 # Build Script
+
+If there's no CSS folder, you can either make a CSS folder with a main.css file, like I've shown below:
+
+```
+css
+-main.css
+```
+
+If you don't want to do that, you can run
+
+```
+npm start
+```
+
+and make a change to .scss file and the .scss will be compiled to .css. The server will reload and the default styles will be showing
