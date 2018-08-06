@@ -8,6 +8,16 @@
   padding: 0;
   margin: 0;
   font-size: 2rem;
+  @include respond(tabLand) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    grid-template-rows: repeat(6, max-content);
+  }
+  @include respond(tabPort) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    grid-template-rows: repeat(6, max-content);
+  }
   &-home {
     grid-row: 1;
     @include headerRoll;
@@ -16,6 +26,12 @@
     }
     &__active {
       background: $homeGreenDark;
+      @include respond(tabLand) {
+        grid-row: 7;
+      }
+      @include respond(tabPort) {
+        grid-row: 7;
+      }
     }
   }
   &-skills {
@@ -26,6 +42,12 @@
     }
     &__active {
       background: $skillsDarkBlue;
+      @include respond(tabLand) {
+        grid-row: 7;
+      }
+      @include respond(tabPort) {
+        grid-row: 7;
+      }
     }
   }
   &-about {
@@ -36,6 +58,12 @@
     }
     &__active {
       background: $aboutPurpleDark;
+      @include respond(tabLand) {
+        grid-row: 7;
+      }
+      @include respond(tabPort) {
+        grid-row: 7;
+      }
     }
   }
   &-portfolio {
@@ -46,6 +74,12 @@
     }
     &__active {
       background: $darkRed;
+      @include respond(tabLand) {
+        grid-row: 7;
+      }
+      @include respond(tabPort) {
+        grid-row: 7;
+      }
     }
   }
   &-blog {
@@ -66,6 +100,12 @@
     }
     &__active {
       background: $darkGrey;
+      @include respond(tabLand) {
+        grid-row: 7;
+      }
+      @include respond(tabPort) {
+        grid-row: 7;
+      }
     }
   }
 }

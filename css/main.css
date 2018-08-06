@@ -38,6 +38,16 @@ a {
   padding: 0;
   margin: 0;
   font-size: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      grid-row: 1;
+      grid-column: 1 / -1;
+      grid-template-rows: repeat(6, max-content); } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      grid-row: 1;
+      grid-column: 1 / -1;
+      grid-template-rows: repeat(6, max-content); } }
   .header-home {
     grid-row: 1;
     border: none;
@@ -67,6 +77,12 @@ a {
       background: #205520; }
     .header-home__active {
       background: #205520; }
+      @media only screen and (max-width: 75em) {
+        .header-home__active {
+          grid-row: 7; } }
+      @media only screen and (max-width: 56.25em) {
+        .header-home__active {
+          grid-row: 7; } }
   .header-skills {
     grid-row: 2;
     border: none;
@@ -96,6 +112,12 @@ a {
       background: #13427f; }
     .header-skills__active {
       background: #13427f; }
+      @media only screen and (max-width: 75em) {
+        .header-skills__active {
+          grid-row: 7; } }
+      @media only screen and (max-width: 56.25em) {
+        .header-skills__active {
+          grid-row: 7; } }
   .header-about {
     grid-row: 3;
     border: none;
@@ -125,6 +147,12 @@ a {
       background: #460f34; }
     .header-about__active {
       background: #460f34; }
+      @media only screen and (max-width: 75em) {
+        .header-about__active {
+          grid-row: 7; } }
+      @media only screen and (max-width: 56.25em) {
+        .header-about__active {
+          grid-row: 7; } }
   .header-portfolio {
     grid-row: 4;
     border: none;
@@ -154,6 +182,12 @@ a {
       background: #6b2b2b; }
     .header-portfolio__active {
       background: #6b2b2b; }
+      @media only screen and (max-width: 75em) {
+        .header-portfolio__active {
+          grid-row: 7; } }
+      @media only screen and (max-width: 56.25em) {
+        .header-portfolio__active {
+          grid-row: 7; } }
   .header-blog {
     grid-row: 5;
     border: none;
@@ -212,6 +246,12 @@ a {
       background: #565454; }
     .header-contact__active {
       background: #565454; }
+      @media only screen and (max-width: 75em) {
+        .header-contact__active {
+          grid-row: 7; } }
+      @media only screen and (max-width: 56.25em) {
+        .header-contact__active {
+          grid-row: 7; } }
 
 .primary {
   display: grid;
