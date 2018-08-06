@@ -1,3 +1,5 @@
+// This is a 3 column layout with 5 rows. I did this on my personal site so that I can fit 
+// Certain content specifically inside of the 4rem row (row #2). 
 .portfolio {
   grid-column: 2;
   grid-row: 1 / -1;

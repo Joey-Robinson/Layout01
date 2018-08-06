@@ -1,3 +1,7 @@
+// This is for skills.html. Here I went with a 5 column layout. I wanted to add 5 skills to this page
+// (CSS, JS, React, Other/Technical, Soft) and have one of them occupy a column. Then I added
+// max-content for the first row (see here: https://i.imgur.com/t1sTx1Y.png). You can probably
+// remove or change max-content and just add another 5rem row so the content isn't touching the top of the page 
 .skills {
   background: $skillsDarkBlue;
   grid-column: 2;
