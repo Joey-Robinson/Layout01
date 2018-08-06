@@ -1,0 +1,13 @@
+.primary {
+  display: grid;
+  grid-template-columns: 10% 65% 15% 10%;
+  grid-template-rows: 20rem 24rem 57.5rem max-content;
+  @include respond(tabLand) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+  }
+  @include respond(tabPort) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+  }
+}
