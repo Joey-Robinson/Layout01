@@ -25,7 +25,7 @@ Like the description says. I'll be making a series of layouts for anyone to use.
 
 # Instructions:
 
-git clone [the repo](https://github.com/Joey-Robinson/Layout01.git)
+#### git clone [the repo](https://github.com/Joey-Robinson/Layout01.git)
 
 change directory into the repo
 
