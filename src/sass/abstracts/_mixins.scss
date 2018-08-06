@@ -9,20 +9,20 @@
     width: 100%;
     transition: all .1s ease-in;
   }
-  &-Visible {
+  &__visible {
     padding: .2rem;
   }
-  &-Invisible {
+  &__invisible {
     font-size: inherit;
     padding: .2rem;
     position: absolute;
     left: 0;
     top: -100%;
   }
-  &:hover &-Visible {
+  &:hover &__visible {
     transform: translateY(100%);
   }
-  &:hover &-Invisible {
+  &:hover &__invisible {
     top: 0;
   }
   &:focus {

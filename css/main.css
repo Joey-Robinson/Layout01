@@ -16,6 +16,12 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+a {
+  text-decoration: none;
+  color: #e2e1e1;
+  height: 100%;
+  width: 100%; }
+
 .footer {
   grid-column: 3;
   grid-row: 1 / -1;
@@ -25,7 +31,162 @@ body {
   grid-column: 3;
   grid-row: 2;
   z-index: 2;
-  background: #222; }
+  background: #222;
+  display: grid;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem; }
+  .header-home {
+    grid-row: 1;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-home > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-home__visible {
+      padding: .2rem; }
+    .header-home__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-home:hover .header-home__visible {
+      transform: translateY(100%); }
+    .header-home:hover .header-home__invisible {
+      top: 0; }
+    .header-home:focus {
+      outline: none; }
+  .header-skills {
+    grid-row: 2;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-skills > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-skills__visible {
+      padding: .2rem; }
+    .header-skills__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-skills:hover .header-skills__visible {
+      transform: translateY(100%); }
+    .header-skills:hover .header-skills__invisible {
+      top: 0; }
+    .header-skills:focus {
+      outline: none; }
+  .header-about {
+    grid-row: 3;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-about > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-about__visible {
+      padding: .2rem; }
+    .header-about__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-about:hover .header-about__visible {
+      transform: translateY(100%); }
+    .header-about:hover .header-about__invisible {
+      top: 0; }
+    .header-about:focus {
+      outline: none; }
+  .header-portfolio {
+    grid-row: 4;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-portfolio > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-portfolio__visible {
+      padding: .2rem; }
+    .header-portfolio__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-portfolio:hover .header-portfolio__visible {
+      transform: translateY(100%); }
+    .header-portfolio:hover .header-portfolio__invisible {
+      top: 0; }
+    .header-portfolio:focus {
+      outline: none; }
+  .header-blog {
+    grid-row: 5;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-blog > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-blog__visible {
+      padding: .2rem; }
+    .header-blog__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-blog:hover .header-blog__visible {
+      transform: translateY(100%); }
+    .header-blog:hover .header-blog__invisible {
+      top: 0; }
+    .header-blog:focus {
+      outline: none; }
+  .header-contact {
+    grid-row: 6;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .header-contact > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all .1s ease-in; }
+    .header-contact__visible {
+      padding: .2rem; }
+    .header-contact__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .header-contact:hover .header-contact__visible {
+      transform: translateY(100%); }
+    .header-contact:hover .header-contact__invisible {
+      top: 0; }
+    .header-contact:focus {
+      outline: none; }
 
 .primary {
   display: grid;

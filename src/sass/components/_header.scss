@@ -3,4 +3,33 @@
   grid-row: 2;
   z-index: 2;
   background: #222;
+  display: grid;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  &-home {
+    grid-row: 1;
+    @include headerRoll;
+  }
+  &-skills {
+    grid-row: 2;
+    @include headerRoll;
+  }
+  &-about {
+    grid-row: 3;
+    @include headerRoll;
+  }
+  &-portfolio {
+    grid-row: 4;
+    @include headerRoll;
+  }
+  &-blog {
+    grid-row: 5;
+    @include headerRoll;
+  }
+  &-contact {
+    grid-row: 6;
+    @include headerRoll;
+  }
 }
