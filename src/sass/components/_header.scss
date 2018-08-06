@@ -11,6 +11,12 @@
   &-home {
     grid-row: 1;
     @include headerRoll;
+    &:hover {
+      background: $homeGreenDark;
+    }
+    & a:active {
+      background: $homeGreenDark;
+    }
   }
   &-skills {
     grid-row: 2;
