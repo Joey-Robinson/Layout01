@@ -24,9 +24,15 @@ a {
   width: 100%; }
 
 .footer {
+  background: #9a4411;
+  color: #e2e1e1;
   grid-column: 3;
   grid-row: 1 / -1;
-  background: #9a4411; }
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  box-shadow: 3.5px 0 black; }
 
 .header {
   grid-column: 3;

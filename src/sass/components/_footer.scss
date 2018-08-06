@@ -1,5 +1,11 @@
 .footer {
+  background: $footerOrangeDark;
+  color: $headerWhite;
   grid-column: 3;
   grid-row: 1 / -1;
-  background: $footerCoralOrange;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  box-shadow: 3.5px 0 black;
 }
