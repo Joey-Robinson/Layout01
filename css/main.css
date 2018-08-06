@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif");
 *,
 *::before,
 *::after {
@@ -64,7 +65,7 @@ a {
       outline: none; }
     .header-home:hover {
       background: #205520; }
-    .header-home a:active {
+    .header-home__active {
       background: #205520; }
   .header-skills {
     grid-row: 2;
@@ -91,6 +92,10 @@ a {
       top: 0; }
     .header-skills:focus {
       outline: none; }
+    .header-skills:hover {
+      background: #13427f; }
+    .header-skills__active {
+      background: #13427f; }
   .header-about {
     grid-row: 3;
     border: none;
@@ -116,6 +121,10 @@ a {
       top: 0; }
     .header-about:focus {
       outline: none; }
+    .header-about:hover {
+      background: #460f34; }
+    .header-about__active {
+      background: #460f34; }
   .header-portfolio {
     grid-row: 4;
     border: none;
@@ -141,6 +150,10 @@ a {
       top: 0; }
     .header-portfolio:focus {
       outline: none; }
+    .header-portfolio:hover {
+      background: #6b2b2b; }
+    .header-portfolio__active {
+      background: #6b2b2b; }
   .header-blog {
     grid-row: 5;
     border: none;
@@ -166,6 +179,10 @@ a {
       top: 0; }
     .header-blog:focus {
       outline: none; }
+    .header-blog:hover {
+      background: #5f3f39; }
+    .header-blog__active {
+      background: #5f3f39; }
   .header-contact {
     grid-row: 6;
     border: none;
@@ -191,6 +208,10 @@ a {
       top: 0; }
     .header-contact:focus {
       outline: none; }
+    .header-contact:hover {
+      background: #565454; }
+    .header-contact__active {
+      background: #565454; }
 
 .primary {
   display: grid;

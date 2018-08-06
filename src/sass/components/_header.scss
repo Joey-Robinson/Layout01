@@ -14,28 +14,58 @@
     &:hover {
       background: $homeGreenDark;
     }
-    & a:active {
+    &__active {
       background: $homeGreenDark;
     }
   }
   &-skills {
     grid-row: 2;
     @include headerRoll;
+    &:hover {
+      background: $skillsDarkBlue;
+    }
+    &__active {
+      background: $skillsDarkBlue;
+    }
   }
   &-about {
     grid-row: 3;
     @include headerRoll;
+    &:hover {
+      background: $aboutPurpleDark;
+    }
+    &__active {
+      background: $aboutPurpleDark;
+    }
   }
   &-portfolio {
     grid-row: 4;
     @include headerRoll;
+    &:hover {
+      background: $darkRed;
+    }
+    &__active {
+      background: $darkRed;
+    }
   }
   &-blog {
     grid-row: 5;
     @include headerRoll;
+    &:hover {
+      background: $blogBrown;
+    }
+    &__active {
+      background: $blogBrown;
+    }
   }
   &-contact {
     grid-row: 6;
     @include headerRoll;
+    &:hover {
+      background: $darkGrey;
+    }
+    &__active {
+      background: $darkGrey;
+    }
   }
 }
