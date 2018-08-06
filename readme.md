@@ -1,7 +1,25 @@
 ---
-Title: "Layout #1"
-Description: "A series of layouts using CSS Grid. This is the first."
+Title: "CSS Grid Layout #1"
 ---
+
+# Description
+
+A CSS Grid layout that I'm clearing so people can use how they want. This will be the first in a small series of CSS Grid layouts that I publish
+
+# What's In It?
+
+Well, I'm using the following devDependencies:
+
+1.  [autoprefixer](https://www.npmjs.com/package/autoprefixer)
+2.  [concat](https://www.npmjs.com/package/concat)
+3.  [live-server](https://www.npmjs.com/package/live-server)
+4.  [node-sass](https://www.npmjs.com/package/node-sass)
+5.  [npm-run-all](https://www.npmjs.com/package/npm-run-all)
+6.  [postcss-cli](https://www.npmjs.com/package/postcss-cli)
+
+This is to minify, prefix, and concat the CSS, as well has being able to run multiple scripts at the same time.
+
+# Information
 
 Like the description says. I'll be making a series of layouts for anyone to use. This is the first, which will be a recreation of my personal site. I'll update down the line with instructions.
 
