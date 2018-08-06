@@ -1,0 +1,26 @@
+.skills {
+  background: $skillsDarkBlue;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  color: $headerWhite;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: max-content 5rem repeat(2, 10rem) min-content;
+  justify-items: center;
+  text-align: center;
+  box-shadow: -3.5px 0 0 0 black;
+  @include respond(tabLand) {
+    padding-top: 1rem;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  }
+  @include respond(tabPort) {
+    padding-top: 1rem;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+  }
+}
