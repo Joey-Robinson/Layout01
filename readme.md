@@ -62,3 +62,5 @@ Note: You need to make a CSS Folder with main.css if one isn't present on clonin
 # Usage
 
 After you've installed & gotten everything up and running, go wild. Add or remove pages as you see fit. Remove or add columns and rows if you need/don't need. I made this so people can have some exposure to both scss and CSS Grid.
+
+# Build Script
