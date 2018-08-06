@@ -16,6 +16,17 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.footer {
+  grid-column: 3;
+  grid-row: 1 / -1;
+  background: #9a4411; }
+
+.header {
+  grid-column: 3;
+  grid-row: 2;
+  z-index: 2;
+  background: #222; }
+
 .primary {
   display: grid;
   grid-template-columns: 10% 65% 15% 10%;

@@ -1,0 +1,29 @@
+$red: #8f3a3a;
+$darkRed: darken($red, 10%);
+
+$lightGrey: #afadad;
+$darkGrey: darken($lightGrey, 35%);
+
+$skillsBlue: #2070d8;
+$skillsDarkBlue: darken($skillsBlue, 20%);
+
+// $aboutPurple: #901b69;
+// $aboutPurpleDark: darken($aboutPurple, 10%);
+$aboutPurple: #701853;
+$aboutPurpleDark: darken($aboutPurple, 10%);
+
+$homeGreen: #318131;
+$homeGreenDark: darken($homeGreen, 12%);
+
+$blogBrown: #5f3f39;
+
+$footerOrange: #df6219;
+$footerCoralOrange: darken($footerOrange, 15%);
+
+$rotatingCardPinkBack: #c7249e5d;
+// $rotatingCardPinkBackDark: darken($rotatingCardPinkBack, 20%);
+
+$headerWhite: #e2e1e1;
+$black: #1b1818;
+
+$darkBorder: .2rem solid $black;
