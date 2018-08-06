@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compress": "node-sass --output-style compressed -o dist/css src/sass"
+    "watch:sass": "node-sass src/sass/main.scss dist/css/main.css -w",
+    "compress": "node-sass --output-style compressed -o dist/css src/sass",
+    "prefix:css": "postcss -u autoprefixer -r dist/css/*"
   },
   "keywords": [],
   "author": "Joey Robinson <joeyrobinsondev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.9.2"
+    "autoprefixer": "^9.1.0",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0"
   }
 }
