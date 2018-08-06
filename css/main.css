@@ -283,6 +283,34 @@ a {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: max-content; } }
 
+.about {
+  background: #460f34;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  color: #e2e1e1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  box-shadow: -3.5px 0 0 0 black;
+  font-size: 2rem; }
+  .about-interests, .about-past, .about-future, .about-random {
+    padding: .5rem 1rem 1rem 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about-interests, .about-past, .about-future, .about-random {
+        word-break: break-all;
+        hyphens: auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      grid-row: 2;
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 75em) {
+    .about {
+      grid-row: 2;
+      grid-column: 1 / -1; } }
+  .about h1 {
+    text-align: center;
+    text-decoration: underline; }
+
 .contact {
   background: #565454;
   grid-column: 2;
