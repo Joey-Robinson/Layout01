@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss css/main.css -w",
+    "watch:sass": "node-sass src/sass/main.scss dist/css/main.css -w",
     "dev": "live-server --port=8080",
     "start": "npm-run-all --parallel dev watch:sass",
-    "compress:sass": "node-sass --output-style compressed -o css src/sass",
-    "compile:sass": "node-sass src/sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/style.comp.css",
-    "prefix:css": "postcss -u autoprefixer -r css/*",
+    "compress:sass": "node-sass --output-style compressed -o dist/css src/sass",
+    "compile:sass": "node-sass src/sass/main.scss dist/css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css dist/css/style.comp.css",
+    "prefix:css": "postcss -u autoprefixer -r dist/css/*",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:sass"
   },
   "keywords": [],

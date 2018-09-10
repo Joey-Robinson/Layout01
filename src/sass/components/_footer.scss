@@ -1,25 +1,5 @@
-// Footer component that renders on all pages. It's meant to be where it is and is moved with media queries
-// To the bottom of the site on smaller devices. 
 .footer {
-  background: $footerOrangeDark;
-  color: $headerWhite;
-  grid-column: 3;
   grid-row: 1 / -1;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(10, 1fr);
-  box-shadow: 3.5px 0 black;
-  @include respond(tabLand) {
-    grid-row: 3;
-    grid-column: 1 / -1;
-  }
-  @include respond(tabPort) {
-    grid-row: 3;
-    grid-column: 1 / -1;
-  }
-  &-signature {
-    grid-row: -1;
-    align-self: center;
-  }
+  grid-column: 3;
+  background: #000;
 }

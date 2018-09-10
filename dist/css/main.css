@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+  background: #222;
+  color: white;
+  font-weight: 300;
+  line-height: 1.6; }
+
+a {
+  text-decoration: none;
+  color: #e2e1e1;
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+.nav {
+  grid-row: 2;
+  grid-column: 3;
+  z-index: 2;
+  background: orangered;
+  display: grid;
+  font-size: 3rem;
+  text-align: center;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 5rem 1fr 5rem; }
+  .nav div {
+    grid-column: 2;
+    justify-self: center;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    .nav div > * {
+      display: block;
+      height: 100%;
+      max-width: 100%;
+      transition: all .12s ease-in; }
+    .nav div__visible {
+      padding: .2rem; }
+    .nav div__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .nav div:hover .nav div__visible {
+      transform: translateY(100%); }
+    .nav div:hover .nav div__invisible {
+      top: 0; }
+    .nav div:focus {
+      outline: none; }
+  .nav-home, .nav-portfolio, .nav-skills, .nav-contact {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    .nav-home > *, .nav-portfolio > *, .nav-skills > *, .nav-contact > * {
+      display: block;
+      height: 100%;
+      max-width: 100%;
+      transition: all .12s ease-in; }
+    .nav-home__visible, .nav-portfolio__visible, .nav-skills__visible, .nav-contact__visible {
+      padding: .2rem; }
+    .nav-home__invisible, .nav-portfolio__invisible, .nav-skills__invisible, .nav-contact__invisible {
+      font-size: inherit;
+      padding: .2rem;
+      position: absolute;
+      left: 0;
+      top: -100%; }
+    .nav-home:hover .nav-home__visible, .nav-portfolio:hover .nav-home__visible, .nav-skills:hover .nav-home__visible, .nav-contact:hover .nav-home__visible, .nav-home:hover .nav-portfolio__visible, .nav-portfolio:hover .nav-portfolio__visible, .nav-skills:hover .nav-portfolio__visible, .nav-contact:hover .nav-portfolio__visible, .nav-home:hover .nav-skills__visible, .nav-portfolio:hover .nav-skills__visible, .nav-skills:hover .nav-skills__visible, .nav-contact:hover .nav-skills__visible, .nav-home:hover .nav-contact__visible, .nav-portfolio:hover .nav-contact__visible, .nav-skills:hover .nav-contact__visible, .nav-contact:hover .nav-contact__visible {
+      transform: translateY(100%); }
+    .nav-home:hover .nav-home__invisible, .nav-portfolio:hover .nav-home__invisible, .nav-skills:hover .nav-home__invisible, .nav-contact:hover .nav-home__invisible, .nav-home:hover .nav-portfolio__invisible, .nav-portfolio:hover .nav-portfolio__invisible, .nav-skills:hover .nav-portfolio__invisible, .nav-contact:hover .nav-portfolio__invisible, .nav-home:hover .nav-skills__invisible, .nav-portfolio:hover .nav-skills__invisible, .nav-skills:hover .nav-skills__invisible, .nav-contact:hover .nav-skills__invisible, .nav-home:hover .nav-contact__invisible, .nav-portfolio:hover .nav-contact__invisible, .nav-skills:hover .nav-contact__invisible, .nav-contact:hover .nav-contact__invisible {
+      top: 0; }
+    .nav-home:focus, .nav-portfolio:focus, .nav-skills:focus, .nav-contact:focus {
+      outline: none; }
+
+.footer {
+  grid-row: 1 / -1;
+  grid-column: 3;
+  background: #000; }
+
+.primary {
+  display: grid;
+  grid-template-columns: 10% 65% 15% 10%;
+  grid-template-rows: 20rem 24rem 57.5rem max-content; }
+
+.home {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  background: purple; }
+
+.portfolio {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  background: green; }
+
+.skills {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  background: brown; }
