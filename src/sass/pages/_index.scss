@@ -12,6 +12,7 @@
   }
 
   @include respond(phone) {
+    background: $red;
     grid-column: 1;
     grid-row: 2;
   }

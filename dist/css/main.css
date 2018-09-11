@@ -20,7 +20,8 @@ body {
 a {
   text-decoration: none;
   color: #e2e1e1;
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100%; }
   @media only screen and (max-width: 75em) {
     a {
       width: 100%;
@@ -51,8 +52,12 @@ circle {
   display: grid;
   font-size: 3rem;
   text-align: center;
+  justify-items: center;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 5rem 1fr 5rem; }
+  grid-template-columns: 1fr; }
+  .nav-current {
+    background: #212530;
+    color: #e2e1e1; }
   @media only screen and (max-width: 75em) {
     .nav {
       background: #9d3d05;
@@ -64,23 +69,28 @@ circle {
       grid-template-columns: repeat(4, 1fr); } }
   @media only screen and (max-width: 37.5em) {
     .nav {
-      background: #9d3d05;
+      background: #005F6B;
       font-size: 1.4rem;
       grid-row: 1;
       grid-column: 1;
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: repeat(4, 1fr); } }
+  .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
+    background: #212530;
+    color: #e2e1e1; }
   .nav-home, .nav-portfolio, .nav-skills, .nav-contact {
     border: none;
     position: relative;
     overflow: hidden;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    grid-column: 1;
+    width: 100%; }
     .nav-home > *, .nav-portfolio > *, .nav-skills > *, .nav-contact > * {
       display: block;
       height: 100%;
-      max-width: 100%;
+      width: 100%;
       transition: all .12s ease-in; }
     .nav-home__visible, .nav-portfolio__visible, .nav-skills__visible, .nav-contact__visible {
       padding: .2rem; }
@@ -96,9 +106,12 @@ circle {
       top: 0; }
     .nav-home:focus, .nav-portfolio:focus, .nav-skills:focus, .nav-contact:focus {
       outline: none; }
-    .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
-      background: #262b38;
-      color: #e2e1e1; }
+    @media only screen and (max-width: 75em) {
+      .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
+        background: #772b2b;
+        color: #e2e1e1;
+        min-width: 100%;
+        width: 100%; } }
   @media only screen and (max-width: 37.5em) {
     .nav-home {
       grid-column: 1; }
@@ -115,16 +128,18 @@ circle {
   background: #9d3d05;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr;
+  font-size: 2rem; }
   @media only screen and (max-width: 75em) {
     .footer {
       grid-column: 1;
       grid-row: 3; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
+      font-size: 1.4rem;
+      background: #005F6B;
       grid-column: 1;
-      grid-row: 3;
-      z-index: 3; } }
+      grid-row: 3; } }
 
 .primary {
   display: grid;
@@ -134,14 +149,14 @@ circle {
     .primary {
       grid-template-columns: 1fr;
       grid-template-rows: max-content 95vh 2rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .primary {
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content 95vh 2rem; } }
   @media only screen and (max-width: 56.25em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: max-content 95vh 2rem; } }
+      grid-template-rows: 50vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .primary {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content 95vh max-content; } }
 
 .left {
   grid-column: 1 / -1;
@@ -172,6 +187,7 @@ circle {
       grid-row: 2; } }
   @media only screen and (max-width: 37.5em) {
     .home {
+      background: #772b2b;
       grid-column: 1;
       grid-row: 2; } }
 

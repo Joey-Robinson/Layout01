@@ -10,14 +10,14 @@
     grid-template-rows: max-content 95vh 2rem;
   }
 
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 95vh 2rem;
-  }
-
   @include respond(tabPort) {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content 95vh 2rem;
+    grid-template-rows: 50vh;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 95vh max-content;
   }
 }
 

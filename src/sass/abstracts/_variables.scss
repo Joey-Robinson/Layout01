@@ -1,6 +1,6 @@
 // Here's your variables. If you don't like the color of something put it here. This is what I used, but feel free
 // To change it to fit your needs.
-$red: #8f3a3a;
+$red: #772b2b;
 $darkRed: darken($red, 10%);
 $lightGrey: #afadad;
 $darkGrey: darken($lightGrey, 35%);
@@ -16,4 +16,21 @@ $footerOrange: #ce5007;
 $footerOrangeDark: darken($footerOrange, 10%);
 $headerWhite: #e2e1e1;
 $primaryColor: #262b38;
+$primaryColorSmall: #343838;
+$secondaryColorSmall: #005F6B;
 $darkBorder: .2rem solid $primaryColor;
+
+
+// Possible Colors
+$possibleOne: #213435;
+$possibleTwo: #46685B;
+$possibleThree: #8A7E66;
+$possibleFour: #49281F;
+$possibleFive: #355C7D; // +1
+$possibleSix: #594F4F;
+$possibleSeven: #547980;
+$possibleEight: #1C0113;
+$possibleNine: #420405;
+$possibleTen: #A30006;
+$possibleEleven: #C21A01;
+$possibleTwelve: #1D2E4C;
