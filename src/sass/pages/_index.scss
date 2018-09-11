@@ -5,4 +5,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-template-rows: repeat(3, 1fr);
+
+  @include respond(phone) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }

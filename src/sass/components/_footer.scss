@@ -5,4 +5,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+
+  @include respond(phone) {
+    grid-column: 1;
+    grid-row: 3;
+    z-index: 3;
+  }
 }

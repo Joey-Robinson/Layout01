@@ -4,4 +4,8 @@ circle {
   stroke-miterlimit: 10;
   stroke-width: 2px;
   height: 100%;
+
+  @include respond(phone) {
+    display: none;
+  }
 }

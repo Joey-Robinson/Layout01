@@ -9,16 +9,39 @@
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 5rem 1fr 5rem;
 
-  & div {
-    grid-column: 2;
-    justify-self: center;
-    @include headerRoll;
+  @include respond(phone) {
+    background: $footerOrangeDark;
+    font-size: 1.6rem;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
+
 
   &-home,
   &-portfolio,
   &-skills,
   &-contact {
     @include headerRoll;
+  }
+
+  @include respond(phone) {
+    &-home {
+      grid-column: 1;
+    }
+
+    &-portfolio {
+      grid-column: 2;
+    }
+
+    &-skills {
+      grid-column: 3;
+    }
+
+    &-contact {
+      grid-column: 4;
+    }
   }
 }
