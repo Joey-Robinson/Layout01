@@ -2,4 +2,7 @@
   grid-row: 1 / -1;
   grid-column: 3;
   background: $footerOrangeDark;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }

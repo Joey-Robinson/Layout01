@@ -29,7 +29,8 @@ circle {
   fill: #bbbaba;
   stroke: #262b38;
   stroke-miterlimit: 10;
-  stroke-width: 2px; }
+  stroke-width: 2px;
+  height: 100%; }
 
 .nav {
   grid-row: 2;
@@ -97,7 +98,10 @@ circle {
 .footer {
   grid-row: 1 / -1;
   grid-column: 3;
-  background: #9d3d05; }
+  background: #9d3d05;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; }
 
 .primary {
   display: grid;
@@ -117,7 +121,10 @@ circle {
 .home {
   grid-column: 2;
   grid-row: 1 / -1;
-  background: #262b38; }
+  background: #262b38;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-rows: repeat(3, 1fr); }
 
 .portfolio {
   grid-column: 2;
