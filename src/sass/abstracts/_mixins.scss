@@ -1,6 +1,11 @@
 // This is a mixin for the header animation. If you want to speed it up, slow it down, or remove it
 // Then do that here. If you want to remove, you'll need to go to _header.scss and remove @include headerRoll
 // From the scss there.
+@mixin headerColors {
+  background: $primaryColor;
+  color: $headerWhite;
+}
+
 @mixin headerRoll {
   border: none;
   position: relative;

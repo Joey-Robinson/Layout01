@@ -6,6 +6,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
+  @include respond(tabLand) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
   @include respond(phone) {
     grid-column: 1;
     grid-row: 3;

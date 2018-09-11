@@ -5,7 +5,17 @@
   grid-template-columns: 10% 65% 15% 10%;
   grid-template-rows: 20rem 24rem 57.5rem max-content;
 
+  @include respond(tabLand) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 95vh 2rem;
+  }
+
   @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 95vh 2rem;
+  }
+
+  @include respond(tabPort) {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 95vh 2rem;
   }
@@ -15,6 +25,10 @@
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   height: 100%;
+
+  @include respond(tabPort) {
+    display: none;
+  }
 
   @include respond(phone) {
     display: none;
