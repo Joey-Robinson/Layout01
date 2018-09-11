@@ -25,11 +25,17 @@ a {
 ul {
   list-style: none; }
 
+circle {
+  fill: #bbbaba;
+  stroke: #262b38;
+  stroke-miterlimit: 10;
+  stroke-width: 2px; }
+
 .nav {
   grid-row: 2;
   grid-column: 3;
   z-index: 2;
-  background: orangered;
+  background: #262b38;
   display: grid;
   font-size: 3rem;
   text-align: center;
@@ -91,24 +97,39 @@ ul {
 .footer {
   grid-row: 1 / -1;
   grid-column: 3;
-  background: #000; }
+  background: #9d3d05; }
 
 .primary {
   display: grid;
   grid-template-columns: 10% 65% 15% 10%;
   grid-template-rows: 20rem 24rem 57.5rem max-content; }
 
+.left {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  height: 100%; }
+
+.right {
+  grid-column: 4;
+  grid-row: 1 / -1;
+  height: 100%; }
+
+.contact {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  background: #262b38; }
+
 .home {
   grid-column: 2;
   grid-row: 1 / -1;
-  background: purple; }
+  background: #262b38; }
 
 .portfolio {
   grid-column: 2;
   grid-row: 1 / -1;
-  background: green; }
+  background: #262b38; }
 
 .skills {
   grid-column: 2;
   grid-row: 1 / -1;
-  background: brown; }
+  background: #262b38; }
