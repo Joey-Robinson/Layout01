@@ -7,16 +7,16 @@
 }
 
 .left {
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 1 / -1;
   height: 100%;
 }
 
-.right {
-  grid-column: 4;
-  grid-row: 1 / -1;
-  height: 100%;
-}
+// .right {
+//   grid-column: 4;
+//   grid-row: 1 / -1;
+//   height: 100%;
+// }
 
 // What I should do in the future is put all the layout stuff for each page in this folder then add stuff in 
 // the pages folder specific to the pages that isn't layout information
