@@ -9,7 +9,7 @@
 
   @include respond(tabLand) {
     background: #66245B;
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 3;
   }
 

@@ -11,7 +11,6 @@
   grid-template-columns: 1fr;
 
   &-current {
-
     background: darken($primaryColor, 2.5%);
     color: $headerWhite;
 
@@ -24,16 +23,26 @@
     }
   }
 
+
   @include respond(tabLand) {
     background: #66245B;
-    font-size: 1.85rem;
+    font-size: 1.4rem;
     grid-row: 1;
     grid-column: 1;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 
+  @include respond(tabPort) {
+    background: #66245B;
+    font-size: 1.4rem;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 
   @include respond(phone) {
     background: $secondaryColorSmall;
@@ -79,38 +88,61 @@
   }
 
   // Media Queries for Landscape
+
   @include respond(tabLand) {
     &-home {
-      grid-column: 1;
+      grid-row: 1;
     }
 
     &-portfolio {
-      grid-column: 2;
+      grid-row: 2;
     }
 
     &-skills {
-      grid-column: 3;
+      grid-row: 3;
     }
 
     &-contact {
-      grid-column: 4;
+      grid-row: 4;
+    }
+  }
+
+  @include respond(tabPort) {
+    &-home {
+      grid-row: 1;
+    }
+
+    &-portfolio {
+      grid-row: 2;
+    }
+
+    &-skills {
+      grid-row: 3;
+    }
+
+    &-contact {
+      grid-row: 4;
     }
   }
 
   @include respond(phone) {
     &-home {
+      grid-row: 1;
       grid-column: 1;
     }
 
     &-portfolio {
+      grid-row: 1;
       grid-column: 2;
     }
 
     &-skills {
+      grid-row: 1;
       grid-column: 3;
     }
 
     &-contact {
+      grid-row: 1;
       grid-column: 4;
     }
   }

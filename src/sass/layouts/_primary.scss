@@ -6,13 +6,13 @@
   grid-template-rows: 20rem 24rem 57.5rem max-content;
 
   @include respond(tabLand) {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 95vh min-content;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: min-content 95vh max-content;
   }
 
   @include respond(tabPort) {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 95vh max-content;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: min-content 95vh max-content;
   }
 
   @include respond(phone) {
