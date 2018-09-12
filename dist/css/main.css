@@ -128,6 +128,8 @@ circle {
         min-width: 100%;
         width: 100%; } }
   @media only screen and (max-width: 75em) {
+    .nav .nav-primary {
+      display: none; }
     .nav-home {
       grid-row: 1; }
     .nav-portfolio {
@@ -137,6 +139,8 @@ circle {
     .nav-contact {
       grid-row: 4; } }
   @media only screen and (max-width: 56.25em) {
+    .nav .nav-primary {
+      display: none; }
     .nav-home {
       grid-row: 1; }
     .nav-portfolio {
@@ -146,6 +150,10 @@ circle {
     .nav-contact {
       grid-row: 4; } }
   @media only screen and (max-width: 37.5em) {
+    .nav .nav-slide {
+      display: none; }
+    .nav .nav-primary {
+      display: grid; }
     .nav-home {
       grid-row: 1;
       grid-column: 1; }
@@ -190,19 +198,9 @@ circle {
   font-size: 36px;
   margin-left: 50px; }
 
-@media (max-width: 600px) {
-  .nav-slide {
-    display: none; } }
-
-@media (min-width: 600px) {
-  .nav-primary {
-    display: none; } }
-
 @media (min-width: 1200px) {
   .nav-slide {
-    display: none; }
-  .nav-primary {
-    display: grid; } }
+    display: none; } }
 
 .footer {
   grid-row: 1 / -1;
