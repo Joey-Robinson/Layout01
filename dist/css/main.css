@@ -34,6 +34,11 @@ a {
 ul {
   list-style: none; }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
 circle {
   fill: #bbbaba;
   stroke: #262b38;
@@ -121,6 +126,15 @@ circle {
         color: #e2e1e1;
         min-width: 100%;
         width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .nav-home {
+      grid-column: 1; }
+    .nav-portfolio {
+      grid-column: 2; }
+    .nav-skills {
+      grid-column: 3; }
+    .nav-contact {
+      grid-column: 4; } }
   @media only screen and (max-width: 37.5em) {
     .nav-home {
       grid-column: 1; }
@@ -138,7 +152,7 @@ circle {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  font-size: 2rem; }
+  font-size: 1.3rem; }
   @media only screen and (max-width: 75em) {
     .footer {
       background: #66245B;
@@ -146,7 +160,7 @@ circle {
       grid-row: 3; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      font-size: 1.4rem;
+      font-size: 1rem;
       background: #005F6B;
       grid-column: 1;
       grid-row: 3; } }
@@ -158,11 +172,11 @@ circle {
   @media only screen and (max-width: 75em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: max-content 95vh 2rem; } }
+      grid-template-rows: max-content 95vh min-content; } }
   @media only screen and (max-width: 56.25em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: 8rem 95vh max-content; } }
+      grid-template-rows: max-content 95vh max-content; } }
   @media only screen and (max-width: 37.5em) {
     .primary {
       grid-template-columns: 1fr;

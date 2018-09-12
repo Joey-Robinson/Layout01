@@ -25,7 +25,6 @@
   }
 
   @include respond(tabLand) {
-    // background: darken(#489C79, 20%);
     background: #66245B;
     font-size: 1.85rem;
     grid-row: 1;
@@ -76,6 +75,25 @@
         @include headerColors;
         width: 100%;
       }
+    }
+  }
+
+  // Media Queries for Landscape
+  @include respond(tabLand) {
+    &-home {
+      grid-column: 1;
+    }
+
+    &-portfolio {
+      grid-column: 2;
+    }
+
+    &-skills {
+      grid-column: 3;
+    }
+
+    &-contact {
+      grid-column: 4;
     }
   }
 
