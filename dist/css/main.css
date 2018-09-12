@@ -58,9 +58,15 @@ circle {
   .nav-current {
     background: #212530;
     color: #e2e1e1; }
+    @media only screen and (max-width: 75em) {
+      .nav-current {
+        background: #1D0B38; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav-current {
+        background: #772b2b; } }
   @media only screen and (max-width: 75em) {
     .nav {
-      background: #9d3d05;
+      background: #66245B;
       font-size: 1.85rem;
       grid-row: 1;
       grid-column: 1;
@@ -108,6 +114,9 @@ circle {
       outline: none; }
     @media only screen and (max-width: 75em) {
       .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
+        background: #1D0B38; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
         background: #772b2b;
         color: #e2e1e1;
         min-width: 100%;
@@ -132,6 +141,7 @@ circle {
   font-size: 2rem; }
   @media only screen and (max-width: 75em) {
     .footer {
+      background: #66245B;
       grid-column: 1;
       grid-row: 3; } }
   @media only screen and (max-width: 37.5em) {
@@ -152,7 +162,7 @@ circle {
   @media only screen and (max-width: 56.25em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: 50vh; } }
+      grid-template-rows: max-content 95vh max-content; } }
   @media only screen and (max-width: 37.5em) {
     .primary {
       grid-template-columns: 1fr;
@@ -183,6 +193,7 @@ circle {
   grid-template-rows: repeat(3, 1fr); }
   @media only screen and (max-width: 75em) {
     .home {
+      background: #1D0B38;
       grid-column: 1;
       grid-row: 2; } }
   @media only screen and (max-width: 37.5em) {

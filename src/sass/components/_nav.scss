@@ -11,12 +11,22 @@
   grid-template-columns: 1fr;
 
   &-current {
+
     background: darken($primaryColor, 2.5%);
     color: $headerWhite;
+
+    @include respond(tabLand) {
+      background: #1D0B38;
+    }
+
+    @include respond(phone) {
+      background: $red;
+    }
   }
 
   @include respond(tabLand) {
-    background: $footerOrangeDark;
+    // background: darken(#489C79, 20%);
+    background: #66245B;
     font-size: 1.85rem;
     grid-row: 1;
     grid-column: 1;
@@ -56,10 +66,17 @@
 
     @include respond(tabLand) {
       &:hover {
+        background: #1D0B38;
+      }
+    }
+
+    @include respond(phone) {
+      &:hover {
         @include headerColors;
         width: 100%;
       }
     }
+
   }
 
   @include respond(phone) {

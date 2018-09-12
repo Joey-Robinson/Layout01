@@ -8,6 +8,7 @@
   font-size: 2rem;
 
   @include respond(tabLand) {
+    background: #66245B;
     grid-column: 1;
     grid-row: 3;
   }
