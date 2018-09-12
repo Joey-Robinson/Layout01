@@ -2,6 +2,12 @@
 Title: "CSS Grid Layout #1"
 ---
 
+# Updates:
+
+This is the third or fourth iteration of my personal site. I again am doing what I want and trying to make things pixel perfect across the board. Which means I'll have to take my time with this.
+
+# Insctructions ->
+
 # Description
 
 A CSS Grid layout that I'm clearing so people can use how they want. This will be the first in a small series of CSS Grid layouts that I publish

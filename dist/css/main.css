@@ -162,7 +162,7 @@ circle {
   @media only screen and (max-width: 56.25em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: max-content 95vh max-content; } }
+      grid-template-rows: 8rem 95vh max-content; } }
   @media only screen and (max-width: 37.5em) {
     .primary {
       grid-template-columns: 1fr;

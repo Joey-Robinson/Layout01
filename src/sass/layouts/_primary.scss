@@ -12,7 +12,7 @@
 
   @include respond(tabPort) {
     grid-template-columns: 1fr;
-    grid-template-rows: max-content 95vh max-content;
+    grid-template-rows: 8rem 95vh max-content;
   }
 
   @include respond(phone) {
