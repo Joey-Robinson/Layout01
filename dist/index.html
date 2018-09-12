@@ -18,21 +18,37 @@
       test
     </div>
     <nav aria-label="Main Navigation" class="nav">
-      <div class="nav-home nav-current">
+      <div class="nav-home nav-current nav-primary">
         <a href="index.html" class="nav-home__visible">Home</a>
         <a href="index.html" class="nav-home__invisible">Home</a>
       </div>
-      <div class="nav-portfolio">
+      <div class="nav-portfolio nav-primary">
         <a href="portfolio.html" class="nav-home__visible">Portfolio</a>
         <a href="portfolio.html" class="nav-home__invisible">Portfolio</a>
       </div>
-      <div class="nav-skills">
+      <div class="nav-skills nav-primary">
         <a href="skills.html" class="nav-home__visible">Skills</a>
         <a href="skills.html" class="nav-home__invisible">Skills</a>
       </div>
-      <div class="nav-contact">
+      <div class="nav-contact nav-primary">
         <a href="contact.html" class="nav-home__visible">Contact</a>
         <a href="contact.html" class="nav-home__invisible">Contact</a>
+      </div>
+      <span class="nav-slide">
+        <a href="#" id="openSlideMenu">
+          <svg width="30" height="30" id="svg">
+            <path d="M0,5 30,5" stroke="#66245B" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#66245B" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#66245B" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <div class="slide" id="slide">
+        <a href="#" class="btn-close" id="closeSlideMenu">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
       </div>
     </nav>
 

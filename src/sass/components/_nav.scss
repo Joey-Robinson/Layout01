@@ -10,6 +10,10 @@
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr;
 
+  &-slide {
+    padding: 1rem 2.5rem 0 0;
+  }
+
   &-current {
     background: darken($primaryColor, 2.5%);
     color: $headerWhite;
@@ -25,15 +29,14 @@
 
 
   @include respond(tabLand) {
-    background: #66245B;
+    background: #1D0B38;
     font-size: 1.4rem;
     grid-row: 1;
     grid-column: 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    // box-shadow: 5px 5px 5px black;
-    box-shadow: 1.5px 1.5px 1.5px black;
+    // box-shadow: 1.5px 1.5px 1.5px black;
   }
 
   @include respond(phone) {
@@ -139,3 +142,72 @@
     }
   }
 }
+
+.slide {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side a:hover {
+  color: #fff;
+}
+
+.side .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media(max-width: 600px) {
+  .nav-slide {
+    display: none;
+  }
+}
+
+@media(min-width: 600px) {
+  .nav-primary {
+    display: none;
+  }
+}
+
+@media(min-width: 1200px) {
+  .nav-slide {
+    display: none;
+  }
+
+  .nav-primary {
+    display: grid;
+  }
+}
+
+// @include respond(tabLand) {
+//   .nav-primary {
+//     display: none;
+//   }
+// }
+
+// @include respond(phone) {
+//   .nav-slide {
+//     display: none;
+//   }
+// }
