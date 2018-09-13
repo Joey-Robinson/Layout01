@@ -11,7 +11,53 @@
   grid-template-columns: 1fr;
 
   &-slide {
-    padding: 1rem 2.5rem 0 0;
+    padding: 1rem 4rem 0 0;
+
+    &__menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      opacity: 0.9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+      display: grid;
+      grid-row-gap: 8rem;
+      grid-template-columns: 5rem 1fr 5rem;
+      grid-template-rows: repeat(auto-fit, minmax(2rem, 4rem));
+
+      & a {
+        font-size: 2rem;
+        grid-column: 2;
+        height: 1rem;
+        width: 1rem;
+        padding: 1rem 5rem 0 0;
+        justify-self: center;
+      }
+    }
+
+    &__close {
+      text-align: center;
+      color: $headerWhite;
+      background: #111;
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      font-size: 4rem;
+      margin-left: 7rem;
+
+      &:hover {
+        animation: pulsate .95s infinite;
+      }
+    }
+
+    &:hover {
+      animation: pulsate .75s infinite;
+    }
   }
 
   &-current {
@@ -19,7 +65,7 @@
     color: $headerWhite;
 
     @include respond(tabLand) {
-      background: #1D0B38;
+      background: #1d0b38;
     }
 
     @include respond(phone) {
@@ -27,9 +73,8 @@
     }
   }
 
-
   @include respond(tabLand) {
-    background: #1D0B38;
+    background: #1d0b38;
     font-size: 1.4rem;
     grid-row: 1;
     grid-column: 1;
@@ -53,7 +98,6 @@
   &-portfolio,
   &-skills,
   &-contact {
-
     &:hover {
       background: darken($primaryColor, 2.5%);
       color: $headerWhite;
@@ -70,7 +114,7 @@
 
     @include respond(tabLand) {
       &:hover {
-        background: #1D0B38;
+        background: #1d0b38;
       }
     }
 
@@ -106,7 +150,6 @@
     }
   }
 
-
   @include respond(tabPort) {
     .nav-primary {
       display: none;
@@ -128,7 +171,6 @@
       grid-row: 4;
     }
   }
-
 
   @include respond(phone) {
     .nav-slide {
@@ -161,84 +203,20 @@
   }
 }
 
-.slide {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-.side a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #ccc;
-  display: block;
-  transition: 0.3s;
-}
-
-.side a:hover {
-  color: #fff;
-}
-
-.side .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-// @media(max-width: 601px) {
-//   .nav-slide {
-//     display: none;
-//   }
-// }
-
-// @media(min-width: 601px) {
-//   .nav-primary {
-//     display: none;
-//   }
-
-//   .nav-slide {
-//     display: inline-block;
-//   }
-// }
-
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .nav-slide {
     display: none;
   }
 }
 
-.path {
-  stroke: #66245B;
+svg {
+  stroke: #66245b;
 }
+
+// .path {
+//   stroke: #66245B;
+// }
 
 .abc {
   stroke: black;
 }
-
-//   .nav-primary {
-//     display: grid;
-//   }
-// }
-
-// @include respond(tabLand) {
-//   .nav-primary {
-//     display: none;
-//   }
-// }
-
-// @include respond(phone) {
-//   .nav-slide {
-//     display: none;
-//   }
-// }

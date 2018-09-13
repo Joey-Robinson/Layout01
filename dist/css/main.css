@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif");
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    color: #e2e1e1; }
+  50% {
+    transform: scale(1.2);
+    color: #66245b; }
+  75% {
+    transform: sacle(1.5);
+    color: #66245b; }
+  100% {
+    transform: scale(1);
+    color: #e2e1e1; } }
+
 *,
 *::before,
 *::after {
@@ -38,6 +52,11 @@ img {
   display: block;
   width: 100%; }
 
+button {
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
 circle {
   fill: #bbbaba;
   stroke: #262b38;
@@ -60,19 +79,55 @@ circle {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr; }
   .nav-slide {
-    padding: 1rem 2.5rem 0 0; }
+    padding: 1rem 4rem 0 0; }
+    .nav-slide__menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      opacity: 0.9;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+      display: grid;
+      grid-row-gap: 8rem;
+      grid-template-columns: 5rem 1fr 5rem;
+      grid-template-rows: repeat(auto-fit, minmax(2rem, 4rem)); }
+      .nav-slide__menu a {
+        font-size: 2rem;
+        grid-column: 2;
+        height: 1rem;
+        width: 1rem;
+        padding: 1rem 5rem 0 0;
+        justify-self: center; }
+    .nav-slide__close {
+      text-align: center;
+      color: #e2e1e1;
+      background: #111;
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      font-size: 4rem;
+      margin-left: 7rem; }
+      .nav-slide__close:hover {
+        animation: pulsate .95s infinite; }
+    .nav-slide:hover {
+      animation: pulsate .75s infinite; }
   .nav-current {
     background: #212530;
     color: #e2e1e1; }
     @media only screen and (max-width: 75em) {
       .nav-current {
-        background: #1D0B38; } }
+        background: #1d0b38; } }
     @media only screen and (max-width: 37.5em) {
       .nav-current {
         background: #772b2b; } }
   @media only screen and (max-width: 75em) {
     .nav {
-      background: #1D0B38;
+      background: #1d0b38;
       font-size: 1.4rem;
       grid-row: 1;
       grid-column: 1;
@@ -120,7 +175,7 @@ circle {
       outline: none; }
     @media only screen and (max-width: 75em) {
       .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
-        background: #1D0B38; } }
+        background: #1d0b38; } }
     @media only screen and (max-width: 37.5em) {
       .nav-home:hover, .nav-portfolio:hover, .nav-skills:hover, .nav-contact:hover {
         background: #772b2b;
@@ -167,43 +222,12 @@ circle {
       grid-row: 1;
       grid-column: 4; } }
 
-.slide {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  opacity: 0.9;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; }
-
-.side a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #ccc;
-  display: block;
-  transition: 0.3s; }
-
-.side a:hover {
-  color: #fff; }
-
-.side .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px; }
-
 @media (min-width: 1200px) {
   .nav-slide {
     display: none; } }
 
-.path {
-  stroke: #66245B; }
+svg {
+  stroke: #66245b; }
 
 .abc {
   stroke: black; }

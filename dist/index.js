@@ -1,17 +1,13 @@
 const openSlide = document.getElementById('openSlideMenu').addEventListener('click', () => {
   const slide = document.getElementById('slide');
-  slide.style.width = '100vw';
+  slide.style.width = '35vw';
 });
 
-const svgPath = document.getElementById('pls').addEventListener('click', () => {
+const svgPath = document.getElementById('svg').addEventListener('click', () => {
   const path = document.querySelectorAll('.path');
-  if (path.classList != 'path') {
-    path.forEach((path) => {
-      path.classList.toggle('abc');
-    })
-  } else {
-    path.classList.toggle('path')
-  }
+  path.forEach((path) => {
+    path.classList.toggle('abc');
+  })
 });
 
 
