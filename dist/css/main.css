@@ -202,6 +202,12 @@ circle {
   .nav-slide {
     display: none; } }
 
+.path {
+  stroke: #66245B; }
+
+.abc {
+  stroke: black; }
+
 .footer {
   grid-row: 1 / -1;
   grid-column: 3;

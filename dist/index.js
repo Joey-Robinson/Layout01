@@ -1,15 +1,24 @@
-const openSlideMenu = () => {
-  document.getElementById('slide').style.width = '100vw';
-}
+const openSlide = document.getElementById('openSlideMenu').addEventListener('click', () => {
+  const slide = document.getElementById('slide');
+  slide.style.width = '100vw';
+});
 
-const closeSlideMenu = () => {
-  document.getElementById('slide').style.width = '0';
-}
+const svgPath = document.getElementById('pls').addEventListener('click', () => {
+  const path = document.querySelectorAll('.path');
+  if (path.classList != 'path') {
+    path.forEach((path) => {
+      path.classList.toggle('abc');
+    })
+  } else {
+    path.classList.toggle('path')
+  }
+});
 
-const openSlide = document.getElementById('openSlideMenu').addEventListener('click', openSlideMenu);
-const closeSlide = document.getElementById('closeSlideMenu').addEventListener('click', closeSlideMenu);
 
-
+const closeSlide = document.getElementById('closeSlideMenu').addEventListener('click', () => {
+  const slide = document.getElementById('slide')
+  slide.style.width = '0';
+});
 
 // var bubbles = document.getElementById("bubbles"),
 //   screenWidth = window.innerWidth,
