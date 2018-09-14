@@ -10,7 +10,6 @@ const svgPath = document.getElementById('svg').addEventListener('click', () => {
   })
 });
 
-
 const closeSlide = document.getElementById('closeSlideMenu').addEventListener('click', () => {
   const slide = document.getElementById('slide')
   slide.style.width = '0';
