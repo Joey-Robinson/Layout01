@@ -13,6 +13,10 @@
   &-slide {
     padding: 1rem 4rem 0 0;
 
+    & svg {
+      stroke: #66245b;
+    }
+
     &__menu {
       height: 100%;
       width: 0;
@@ -207,16 +211,4 @@
   .nav-slide {
     display: none;
   }
-}
-
-svg {
-  stroke: #66245b;
-}
-
-// .path {
-//   stroke: #66245B;
-// }
-
-.abc {
-  stroke: black;
 }

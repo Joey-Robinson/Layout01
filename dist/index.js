@@ -1,21 +1,25 @@
-const openSlide = document.getElementById('openSlideMenu').addEventListener('click', () => {
-  const slide = document.getElementById('slide');
-  slide.style.width = '35vw';
-});
+const openSlide = document
+  .getElementById("openSlideMenu")
+  .addEventListener("click", () => {
+    const slide = document.getElementById("slide");
+    slide.style.width = "35vw";
+  });
 
-const svgPath = document.getElementById('svg').addEventListener('click', () => {
-  const path = document.querySelectorAll('.path');
-  path.forEach((path) => {
-    path.classList.toggle('abc');
-  })
-});
+// const svgPath = document.getElementById('svg').addEventListener('click', () => {
+//   const path = document.querySelectorAll('.path');
+//   path.forEach((path) => {
+//     path.classList.toggle('abc');
+//   })
+// });
 
-const closeSlide = document.getElementById('closeSlideMenu').addEventListener('click', () => {
-  const slide = document.getElementById('slide')
-  slide.style.width = '0';
-});
+const closeSlide = document
+  .getElementById("closeSlideMenu")
+  .addEventListener("click", () => {
+    const slide = document.getElementById("slide");
+    slide.style.width = "0";
+  });
 
-const bubbles = document.getElementById('bubbles'),
+const bubbles = document.getElementById("bubbles"),
   screenWidth = window.innerWidth,
   screenHeight = window.innerHeight,
   containerWidth = 100,
@@ -24,27 +28,32 @@ const bubbles = document.getElementById('bubbles'),
 
 const createCircle = () => {
   const circleXPos = getRandom(1, screenWidth);
-  const circleYPos = getRandom(1, (1 / Math.log(circleXPos)) * 8000 - screenHeight * 0.1);
+  const circleYPos = getRandom(
+    1,
+    (1 / Math.log(circleXPos)) * 8000 - screenHeight * 0.1
+  );
   const circleRadius = getRandom(4, 30);
   const circle = document.createElementNS(svgNS, "circle");
   circle.setAttributeNS(null, "cx", circleXPos);
   circle.setAttributeNS(null, "cy", circleYPos);
   circle.setAttributeNS(null, "r", circleRadius);
   bubbles.appendChild(circle);
-}
+};
 
-const fillColor = (event) => {
-  event.setAttribute('style', `fill: ${colors[Math.floor(Math.random() * colors.length)]}`)
-}
+const fillColor = event => {
+  event.setAttribute(
+    "style",
+    `fill: ${colors[Math.floor(Math.random() * colors.length)]}`
+  );
+};
 
 const getRandom = (min, max) => {
   return min + Math.floor(Math.random() * (max - min + 1));
-}
-
+};
 
 function bubbleHover() {
   for (var e = document.querySelectorAll("circle"), t = 0; t < e.length; t++) {
-    e[t].addEventListener("mouseover", function () {
+    e[t].addEventListener("mouseover", function() {
       fillColor(this);
     });
   }

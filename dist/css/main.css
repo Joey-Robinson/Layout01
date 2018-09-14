@@ -77,6 +77,8 @@ circle {
   grid-template-columns: 1fr; }
   .nav-slide {
     padding: 1rem 4rem 0 0; }
+    .nav-slide svg {
+      stroke: #66245b; }
     .nav-slide__menu {
       height: 100%;
       width: 0;
@@ -223,12 +225,6 @@ circle {
   .nav-slide {
     display: none; } }
 
-svg {
-  stroke: #66245b; }
-
-.abc {
-  stroke: black; }
-
 .footer {
   grid-row: 1 / -1;
   grid-column: 3;
@@ -264,7 +260,7 @@ svg {
   @media only screen and (max-width: 37.5em) {
     .primary {
       grid-template-columns: 1fr;
-      grid-template-rows: max-content 95vh max-content; } }
+      grid-template-rows: max-content max-content max-content; } }
 
 .left {
   grid-column: 1 / -1;
@@ -298,7 +294,21 @@ svg {
     .home {
       background: #772b2b;
       grid-column: 1;
-      grid-row: 2; } }
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+      grid-template-rows: repeat(3, 1fr); }
+      .home h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem; }
+      .home div {
+        align-self: center; }
+      .home p {
+        padding: 1.2rem 1.75rem 0 1.75rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        hyphens: auto; } }
 
 .portfolio {
   grid-column: 2;
