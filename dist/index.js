@@ -5,6 +5,12 @@ const openSlide = document
     slide.style.width = "35vw";
   });
 
+const mouseOver = () => {
+  mouseEvent.classList.toggle('hovered')
+}
+const mouseEvent = document.querySelector('.uno')
+mouseEvent.addEventListener('mousemove', mouseOver);
+
 // const svgPath = document.getElementById('svg').addEventListener('click', () => {
 //   const path = document.querySelectorAll('.path');
 //   path.forEach((path) => {
@@ -53,7 +59,7 @@ const getRandom = (min, max) => {
 
 function bubbleHover() {
   for (var e = document.querySelectorAll("circle"), t = 0; t < e.length; t++) {
-    e[t].addEventListener("mouseover", function() {
+    e[t].addEventListener("mouseover", function () {
       fillColor(this);
     });
   }
