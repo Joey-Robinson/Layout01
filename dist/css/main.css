@@ -6,9 +6,6 @@
   50% {
     transform: scale(1.2);
     color: #66245b; }
-  75% {
-    transform: sacle(1.5);
-    color: #66245b; }
   100% {
     transform: scale(1);
     color: #e2e1e1; } }
@@ -113,9 +110,9 @@ circle {
       font-size: 4rem;
       margin-left: 7rem; }
       .nav-slide__close:hover {
-        animation: pulsate .95s infinite; }
+        animation: pulsate .5s infinite; }
     .nav-slide:hover {
-      animation: pulsate .75s infinite; }
+      animation: pulsate .5s infinite; }
   .nav-current {
     background: #212530;
     color: #e2e1e1; }
