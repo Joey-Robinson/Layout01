@@ -5,11 +5,11 @@ const openSlide = document
     slide.style.width = "35vw";
   });
 
-const mouseOver = () => {
-  mouseEvent.classList.toggle('hovered')
-}
-const mouseEvent = document.querySelector('.uno')
-mouseEvent.addEventListener('mousemove', mouseOver);
+// const mouseOver = () => {
+//   mouseEvent.classList.toggle('hovered')
+// }
+// const mouseEvent = document.querySelector('.content')
+// mouseEvent.addEventListener('mousemove', mouseOver);
 
 // const svgPath = document.getElementById('svg').addEventListener('click', () => {
 //   const path = document.querySelectorAll('.path');

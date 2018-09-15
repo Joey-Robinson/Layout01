@@ -319,25 +319,34 @@ circle {
   .home-one {
     margin-top: 1.1rem;
     padding: 1rem 1.1rem 0 1.1rem;
-    background: rgba(157, 61, 5, 0.9);
-    box-shadow: 5px 5px black;
     grid-column: 2;
-    grid-row: 1; }
+    grid-row: 1;
+    background: rgba(157, 61, 5, 0.9);
+    box-shadow: 5px 5px black; }
+    .home-one:hover {
+      background: #772b2b;
+      transition: all .5s ease-in-out; }
   .home-two {
     margin-top: 1.1rem;
     padding: 1rem 1.1rem 0 1.1rem;
-    background: #212530;
-    box-shadow: 5px 5px black;
     grid-column: 2;
-    grid-row: 2; }
+    grid-row: 2;
+    background: rgba(157, 61, 5, 0.9);
+    box-shadow: 5px 5px black; }
+    .home-two:hover {
+      background: #772b2b;
+      transition: all .5s ease-in-out; }
   .home-three {
     margin-top: 1.1rem;
     margin-bottom: 1.1rem;
     padding: 1rem 1.1rem 0 1.1rem;
-    background: #772b2b;
-    box-shadow: 5px 5px black;
     grid-column: 2;
-    grid-row: 3; }
+    grid-row: 3;
+    background: rgba(157, 61, 5, 0.9);
+    box-shadow: 5px 5px black; }
+    .home-three:hover {
+      background: #772b2b;
+      transition: all .5s ease-in-out; }
   @media only screen and (max-width: 75em) {
     .home {
       background: #1D0B38;
@@ -366,8 +375,12 @@ circle {
       grid-column: 1;
       grid-row: 2;
       display: grid;
-      grid-template-columns: 4rem 1fr 4rem;
+      grid-template-columns: 1rem 1fr 1rem;
       grid-template-rows: repeat(3, 1fr); }
+      .home-one, .home-two, .home-three {
+        background: #005F6B; }
+        .home-one:hover, .home-two:hover, .home-three:hover {
+          pointer-events: none; }
       .home h1 {
         text-align: center;
         font-size: 2rem;
@@ -381,10 +394,6 @@ circle {
         margin-bottom: 1rem;
         font-size: 1.65rem;
         hyphens: auto; } }
-
-.hovered {
-  background: #000;
-  transition: all .5s ease-in; }
 
 .portfolio {
   grid-column: 2;
