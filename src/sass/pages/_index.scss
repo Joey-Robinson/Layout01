@@ -67,16 +67,6 @@
     grid-template-columns: 5rem 1fr 5rem;
     grid-template-rows: repeat(3, 1fr);
 
-    &-one,
-    &-two,
-    &-three {
-      background: #66245b;
-
-      &:hover {
-        pointer-events: none;
-      }
-    }
-
     & h1 {
       text-align: center;
       grid-column: 2;
@@ -85,12 +75,18 @@
     }
 
     & div {
+      background: #66245b;
       align-self: center;
       grid-column: 2;
-      padding: 1.5rem 2.3rem 1.5rem 2.3rem;
+      padding: 1.5rem 2rem 1.5rem 2rem;
+
+      &:hover {
+        pointer-events: none;
+      }
     }
 
     & p {
+
       animation: slide 1s ease-in-out;
       font-size: $mediumFont;
       hyphens: auto;
@@ -118,13 +114,8 @@
 
     & div {
       pointer-events: none;
-    }
-
-    &-one,
-    &-two,
-    &-three {
-      margin-right: .95rem;
       background: $secondaryColorSmall;
+      margin-right: .95rem;
       grid-column: 2;
       padding: 1rem 1.75rem 1rem 1.75rem;
       box-shadow: 5px 5px black;

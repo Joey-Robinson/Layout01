@@ -342,19 +342,18 @@ circle {
       grid-row: 1 / 3;
       grid-template-columns: 5rem 1fr 5rem;
       grid-template-rows: repeat(3, 1fr); }
-      .home-one, .home-two, .home-three {
-        background: #66245b; }
-        .home-one:hover, .home-two:hover, .home-three:hover {
-          pointer-events: none; }
       .home h1 {
         text-align: center;
         grid-column: 2;
         font-size: 2.25rem;
         padding-top: 1rem; }
       .home div {
+        background: #66245b;
         align-self: center;
         grid-column: 2;
-        padding: 1.5rem 2.3rem 1.5rem 2.3rem; }
+        padding: 1.5rem 2rem 1.5rem 2rem; }
+        .home div:hover {
+          pointer-events: none; }
       .home p {
         animation: slide 1s ease-in-out;
         font-size: 1.9rem;
@@ -370,10 +369,9 @@ circle {
       grid-template-columns: 1rem 1fr 1rem;
       grid-template-rows: repeat(3, 1fr); }
       .home div {
-        pointer-events: none; }
-      .home-one, .home-two, .home-three {
-        margin-right: .95rem;
+        pointer-events: none;
         background: #005F6B;
+        margin-right: .95rem;
         grid-column: 2;
         padding: 1rem 1.75rem 1rem 1.75rem;
         box-shadow: 5px 5px black; }
