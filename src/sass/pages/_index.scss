@@ -1,14 +1,36 @@
+// scss file for home/index.html
+// Here I made something that was not only easy on the eyes, but something that's easy to read as well
+// I went with a 3x3 layout, with a large middle column to place content (this continues on tablet/phone).
+// Again I wanted to make use of some padding to move the divs in some
+// I'm also making use of some margin-top/bottom here, so it's not pushing fully against the top of the 
+// Page and touching the footer 
+// Font-Size:
+// font-size: 2.2rem
+// Heading: 3.5rem
 .home {
   grid-column: 2;
   grid-row: 1 / -1;
   background: $primaryColor;
   display: grid;
   grid-template-columns: 15rem 1fr 15rem;
-  // grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   grid-template-rows: repeat(3, 1fr);
-  font-size: 2.1rem;
+  font-size: $base;
+
+  & div {
+    padding: 1rem 1.5rem 0 1.5rem;
+    margin-top: 1.1rem;
+    grid-column: 2;
+    box-shadow: 5px 5px black;
+    background: rgba($footerOrangeDark, .9);
+
+    &:hover {
+      background: $red;
+      transition: all .5s ease-in-out;
+    }
+  }
 
   & h1 {
+    font-size: $largeHeader;
     padding-top: 1.5rem;
     text-align: center;
   }
@@ -19,48 +41,23 @@
   }
 
   &-one {
-    margin-top: 1.1rem;
-    padding: 1rem 1.1rem 0 1.1rem;
-    grid-column: 2;
     grid-row: 1;
-    background: rgba($footerOrangeDark, .9);
-    box-shadow: 5px 5px black;
-
-    &:hover {
-      background: $red;
-      transition: all .5s ease-in-out;
-    }
   }
 
   &-two {
-    margin-top: 1.1rem;
-    padding: 1rem 1.1rem 0 1.1rem;
-    grid-column: 2;
     grid-row: 2;
-    background: rgba($footerOrangeDark, .9);
-    box-shadow: 5px 5px black;
-
-    &:hover {
-      background: $red;
-      transition: all .5s ease-in-out;
-    }
   }
 
   &-three {
-    margin-top: 1.1rem;
     margin-bottom: 1.1rem;
-    padding: 1rem 1.1rem 0 1.1rem;
-    grid-column: 2;
     grid-row: 3;
-    background: rgba($footerOrangeDark, .9);
-    box-shadow: 5px 5px black;
-
-    &:hover {
-      background: $red;
-      transition: all .5s ease-in-out;
-    }
   }
 
+  // Media Queries for tablets. Same as phone - disabling pointer-events.
+  // I think this is (mostly) done. Font-Size listed below:
+  // Comments about the nav/header can be found in _nav.scss
+  // p: 1.9
+  // Headings: 2.25 
   @include respond(tabLand) {
     background: #1D0B38;
     grid-column: 1 / 3;
@@ -81,7 +78,7 @@
     & h1 {
       text-align: center;
       grid-column: 2;
-      font-size: 2.2rem;
+      font-size: $mediumHeader;
       padding-top: 1rem;
     }
 
@@ -93,13 +90,22 @@
 
     & p {
       animation: slide 1s ease-in-out;
-      font-size: 2rem;
+      font-size: $mediumFont;
       hyphens: auto;
       padding: 1.2rem 0 0 0;
       margin-bottom: 1rem;
     }
   }
 
+  // Phone Media Queries
+  // Removing pointer-events, I don't want any hover interaction on phone
+  // Adding a small margin-right (.95rem) so it doesn't look weird
+  // Big padding on the divs themselves to push the p tags farther in.
+  // Font-Size is at least 1.6. I wanted something easier to read. Anything below
+  // 1.6 is very difficult not only for me, but others. And it's 'standard' for accesibility. 
+  // Font-Size:
+  // p: 1.75
+  // Heading: 1.975
   @include respond(phone) {
     background: $red;
     grid-column: 1;
@@ -124,7 +130,7 @@
 
     & h1 {
       text-align: center;
-      font-size: 2rem;
+      font-size: $smallHeader;
       padding: 1rem 1.5rem 0 1.5rem;
       grid-column: 2;
     }
@@ -132,7 +138,7 @@
     & p {
       animation: slide 1s ease-in-out;
       margin-bottom: 1rem;
-      font-size: 1.65rem;
+      font-size: $smallFont;
       hyphens: auto;
     }
   }
