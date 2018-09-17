@@ -65,7 +65,7 @@
     background: #1D0B38;
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-columns: 5rem 1fr 5rem;
     grid-template-rows: repeat(3, 1fr);
 
     &-one,
@@ -108,6 +108,10 @@
     grid-template-columns: 1rem 1fr 1rem;
     grid-template-rows: repeat(3, 1fr);
 
+    & div {
+      pointer-events: none;
+    }
+
     &-one,
     &-two,
     &-three {
@@ -116,10 +120,6 @@
       grid-column: 2;
       padding: 1rem 1.75rem 1rem 1.75rem;
       box-shadow: 5px 5px black;
-
-      &:hover {
-        pointer-events: none;
-      }
     }
 
     & h1 {

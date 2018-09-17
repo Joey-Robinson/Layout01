@@ -94,7 +94,8 @@ circle {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr; }
   .nav-slide {
-    padding: 1rem 4rem 0 0; }
+    padding: 1rem 0 0 0;
+    margin-right: 3rem; }
     .nav-slide svg {
       stroke: #66245b; }
     .nav-slide__menu {
@@ -352,7 +353,7 @@ circle {
       background: #1D0B38;
       grid-column: 1 / 3;
       grid-row: 1 / 3;
-      grid-template-columns: 10rem 1fr 10rem;
+      grid-template-columns: 5rem 1fr 5rem;
       grid-template-rows: repeat(3, 1fr); }
       .home-one, .home-two, .home-three {
         background: #66245b; }
@@ -381,14 +382,14 @@ circle {
       display: grid;
       grid-template-columns: 1rem 1fr 1rem;
       grid-template-rows: repeat(3, 1fr); }
+      .home div {
+        pointer-events: none; }
       .home-one, .home-two, .home-three {
         margin-right: .95rem;
         background: #005F6B;
         grid-column: 2;
         padding: 1rem 1.75rem 1rem 1.75rem;
         box-shadow: 5px 5px black; }
-        .home-one:hover, .home-two:hover, .home-three:hover {
-          pointer-events: none; }
       .home h1 {
         text-align: center;
         font-size: 2rem;
