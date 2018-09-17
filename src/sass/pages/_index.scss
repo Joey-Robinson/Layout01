@@ -68,6 +68,16 @@
     grid-template-columns: 10rem 1fr 10rem;
     grid-template-rows: repeat(3, 1fr);
 
+    &-one,
+    &-two,
+    &-three {
+      background: #66245b;
+
+      &:hover {
+        pointer-events: none;
+      }
+    }
+
     & h1 {
       text-align: center;
       grid-column: 2;
@@ -101,7 +111,11 @@
     &-one,
     &-two,
     &-three {
+      margin-right: .95rem;
       background: $secondaryColorSmall;
+      grid-column: 2;
+      padding: 1rem 1.75rem 1rem 1.75rem;
+      box-shadow: 5px 5px black;
 
       &:hover {
         pointer-events: none;
@@ -113,11 +127,6 @@
       font-size: 2rem;
       padding: 1rem 1.5rem 0 1.5rem;
       grid-column: 2;
-    }
-
-    & div {
-      grid-column: 2;
-      padding: 1rem 1.75rem 1rem 1.75rem;
     }
 
     & p {

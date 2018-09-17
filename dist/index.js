@@ -59,7 +59,7 @@ const getRandom = (min, max) => {
 
 function bubbleHover() {
   for (var e = document.querySelectorAll("circle"), t = 0; t < e.length; t++) {
-    e[t].addEventListener("mouseover", function () {
+    e[t].addEventListener("mouseover", function() {
       fillColor(this);
     });
   }

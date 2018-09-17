@@ -24,10 +24,10 @@
       z-index: 5;
       top: 0;
       left: 0;
-      background-color: #111;
-      opacity: 0.9;
+      background-color: #66245b;
+      opacity: 0.95;
       overflow-x: hidden;
-      padding-top: 60px;
+      padding-top: 7rem;
       transition: 0.5s;
       display: grid;
       grid-row-gap: 8rem;
@@ -47,7 +47,7 @@
     &__close {
       text-align: center;
       color: $headerWhite;
-      background: #111;
+      background: #66245b;
       position: absolute;
       top: 0;
       right: .5rem;
