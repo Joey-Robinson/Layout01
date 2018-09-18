@@ -86,12 +86,9 @@
     }
 
     & p {
-
       animation: slide 1s ease-in-out;
       font-size: $mediumFont;
       hyphens: auto;
-      padding: 1.2rem 0 0 0;
-      margin-bottom: 1rem;
     }
   }
 
@@ -117,7 +114,7 @@
       background: $secondaryColorSmall;
       margin-right: .95rem;
       grid-column: 2;
-      padding: 1rem 1.75rem 1rem 1.75rem;
+      padding: 1rem 1.75rem 0 1.75rem;
       box-shadow: 5px 5px black;
     }
 

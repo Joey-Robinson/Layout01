@@ -116,6 +116,7 @@ circle {
       grid-template-rows: repeat(8, 1fr); }
       .nav-slide__menu a {
         margin-top: 5rem;
+        margin-left: 4rem;
         font-size: 2rem;
         grid-column: 2;
         height: 1rem;
@@ -155,7 +156,9 @@ circle {
       height: 5rem;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      padding-left: 1rem; } }
+      padding-left: 1rem; }
+      .nav a {
+        width: 100%; } }
   @media only screen and (max-width: 37.5em) {
     .nav {
       width: 100%;
@@ -357,9 +360,7 @@ circle {
       .home p {
         animation: slide 1s ease-in-out;
         font-size: 1.9rem;
-        hyphens: auto;
-        padding: 1.2rem 0 0 0;
-        margin-bottom: 1rem; } }
+        hyphens: auto; } }
   @media only screen and (max-width: 37.5em) {
     .home {
       background: #772b2b;
@@ -373,7 +374,7 @@ circle {
         background: #005F6B;
         margin-right: .95rem;
         grid-column: 2;
-        padding: 1rem 1.75rem 1rem 1.75rem;
+        padding: 1rem 1.75rem 0 1.75rem;
         box-shadow: 5px 5px black; }
       .home h1 {
         text-align: center;

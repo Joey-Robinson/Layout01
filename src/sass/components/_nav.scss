@@ -38,6 +38,7 @@
 
       & a {
         margin-top: 5rem;
+        margin-left: 4rem;
         font-size: 2rem;
         grid-column: 2;
         height: 1rem;
@@ -91,6 +92,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     padding-left: 1rem;
+
+    & a {
+      width: 100%;
+    }
   }
 
   @include respond(phone) {
