@@ -310,29 +310,78 @@ circle {
   display: grid;
   padding: 0;
   margin: 0;
-  grid-template-columns: 1fr;
+  grid-template-columns: 20rem 1fr 10%;
   grid-template-rows: repeat(4, 1fr); }
   .contact div {
-    margin-left: 10rem;
-    align-self: center;
-    width: 15rem;
-    height: 15rem; }
+    padding: 1rem 1.5rem 0 3rem;
+    align-self: center; }
   .contact-twitter {
-    grid-row: 2; }
-  .contact-github {
     grid-row: 1; }
+  .contact-twittertext {
+    grid-row: 1;
+    grid-column: 2; }
+  .contact-github {
+    grid-row: 2;
+    grid-column: 1; }
+  .contact-githubtext {
+    grid-row: 2;
+    grid-column: 2; }
   .contact-linkedin {
-    grid-row: 3; }
+    grid-row: 3;
+    grid-column: 1; }
+  .contact-linkedintext {
+    grid-row: 3;
+    grid-column: 2; }
   .contact-gmail {
-    grid-row: 4; }
+    grid-row: 4;
+    grid-column: 1; }
+  .contact-gmailtext {
+    grid-row: 4;
+    grid-column: 2; }
   .contact img {
-    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
     margin: 0; }
   .contact a {
     padding: 0;
-    margin: 0;
-    height: 1rem;
-    width: 1rem; }
+    margin: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      background: #772b2b;
+      grid-column: 1;
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 1rem 1fr 1rem;
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 3rem; }
+      .contact-github {
+        margin-top: 2rem;
+        grid-row: 1;
+        grid-column: 2; }
+      .contact-twitter {
+        grid-row: 2;
+        grid-column: 2; }
+      .contact-linkedin {
+        margin-top: 0;
+        grid-row: 3;
+        grid-column: 2; }
+      .contact-gmail {
+        grid-row: 4;
+        grid-column: 2; }
+      .contact p, .contact-gmailtext, .contact-linkedintext, .contact-twittertext, .contact-githubtext {
+        display: none; }
+      .contact img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      .contact div {
+        margin-right: .75rem;
+        grid-column: 2;
+        padding: 1rem 1.75rem 1rem 1.75rem;
+        width: 30rem;
+        height: 25rem;
+        justify-self: center; } }
 
 .home {
   grid-column: 2;
