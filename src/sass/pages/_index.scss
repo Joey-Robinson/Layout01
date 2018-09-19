@@ -13,10 +13,10 @@
   grid-column: 2;
   grid-row: 1 / -1;
   background: $primaryColor;
+  font-size: $base;
   display: grid;
   grid-template-columns: 15rem 1fr 15rem;
   grid-template-rows: repeat(3, 1fr);
-  font-size: $base;
 
   & div {
     padding: 1rem 1.5rem 0 1.5rem;
