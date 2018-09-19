@@ -3,7 +3,7 @@
 .primary {
   display: grid;
   grid-template-columns: 10% 65% 15% 10%;
-  grid-template-rows: 20rem 24rem 57.5rem max-content;
+  grid-template-rows: 20rem max-content 57.5rem max-content;
 
   @include respond(tabLand) {
     grid-template-columns: 10rem 1fr;
