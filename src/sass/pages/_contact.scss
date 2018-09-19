@@ -109,13 +109,16 @@
       display: block;
       width: 100%;
       height: 100%;
+
+      &:hover {
+        animation: shake .75s infinite;
+      }
     }
 
     & div {
       margin-right: .75rem;
       grid-column: 2;
       padding: 1rem 1.75rem 1rem 1.75rem;
-      // box-shadow: 5px 5px black;
       width: 30rem;
       height: 25rem;
       justify-self: center;
