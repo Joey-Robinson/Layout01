@@ -76,10 +76,12 @@
     grid-row-gap: 3rem;
 
     &-github {
+      border-radius: 50%;
       grid-row: 2;
       grid-column: 2;
 
       img {
+        background: $headerWhite;
         border-radius: 50%;
       }
     }
